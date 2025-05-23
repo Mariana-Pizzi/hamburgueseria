@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Contacto</title>
+</head>
+
+<body>
+
+    <form action="https://formspree.io/f/xqaqojon" method="POST">
+      <fieldset>
+         <legend>Datos Personales</legend>
+         <p>
+            <label for="nombre">Nombre:</label>
+            <input type="text" required minlength="3" maxlength="20" id="nombre" name="nomb">*
+         </p>
+         <p>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" placeholder="15-5555-5555" id="telefono" name="tel">
+         </p>
+         <p>
+            <label for="mail">Correo Electrónico:</label>
+            <input type="email" required placeholder="usuario@ejemplo.com" name="email" id="mail">*
+         </p>
+         <p>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>*
+         </p>
+         <p>
+            <input type="submit" name="enviar" id="boton-enviar" value="Enviar">
+            <input type="reset" name="limpiar" id="boton-limpiar" value="Limpiar">
+         </p>
+      </fieldset>
+   </form>
+
+   Los campos con * son obligatorios
+
+</body>
+
+</html>
